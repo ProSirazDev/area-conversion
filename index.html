@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Area Conversion</title>
+</head>
+<body>
+   <div id="main_idv" class="h-auto px-3">
+    <h1 class="text-red-500 text-2xl text-center bg-gray-700 font-medium max-w-7xl mx-auto py-3">Area Conversion <span class="bg-clip-text text-transparent bg-gradient-to-t from-white to-blue-500">West Bengal</span>
+
+    </h1>
+    <div class="max-w-7xl mx-auto bg-white   ">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 h-auto border shadow-lg p-5">
+            <div class="w-full">
+               <h1 class="text-center rounded-t-lg text-xl font-semibold text-white bg-green-500 py-2">General Formula</h1>
+               <table class="table-auto w-full text-center  sm:block bg-gray-800 text-white border border-gray-700 rounded-lg shadow-lg">
+                <thead>
+                    <tr class="bg-gray-700">
+                        <th class="px-4 py-2 border-b border-gray-600">Unit of Measurement</th>
+                        <th class="px-4 py-2 border-b border-gray-600">Square Meters (m²)</th>
+                        <th class="px-4 py-2 border-b border-gray-600">Acres</th>
+                        <th class="px-4 py-2 border-b border-gray-600">Bigha</th>
+                        <th class="px-4 py-2 border-b border-gray-600">Satak</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="hover:bg-gray-600">
+                        <td class="px-4 py-2 border-b border-gray-600">1 Square Meter</td>
+                        <td class="px-4 py-2 border-b border-gray-600">1</td>
+                        <td class="px-4 py-2 border-b border-gray-600">0.000247</td>
+                        <td class="px-4 py-2 border-b border-gray-600">0.000297</td>
+                        <td class="px-4 py-2 border-b border-gray-600">0.0108</td>
+                    </tr>
+                    <tr class="hover:bg-gray-600">
+                        <td class="px-4 py-2 border-b border-gray-600">1 Acre</td>
+                        <td class="px-4 py-2 border-b border-gray-600">4046.86</td>
+                        <td class="px-4 py-2 border-b border-gray-600">1</td>
+                        <td class="px-4 py-2 border-b border-gray-600">1.194</td>
+                        <td class="px-4 py-2 border-b border-gray-600">43.56</td>
+                    </tr>
+                    <tr class="hover:bg-gray-600">
+                        <td class="px-4 py-2 border-b border-gray-600">1 Bigha</td>
+                        <td class="px-4 py-2 border-b border-gray-600">3360</td>
+                        <td class="px-4 py-2 border-b border-gray-600">0.832</td>
+                        <td class="px-4 py-2 border-b border-gray-600">1</td>
+                        <td class="px-4 py-2 border-b border-gray-600">36.42</td>
+                    </tr>
+                    <tr class="hover:bg-gray-600">
+                        <td class="px-4 py-2 border-b border-gray-600">1 Satak</td>
+                        <td class="px-4 py-2 border-b border-gray-600">36.46</td>
+                        <td class="px-4 py-2 border-b border-gray-600">0.009</td>
+                        <td class="px-4 py-2 border-b border-gray-600">0.0275</td>
+                        <td class="px-4 py-2 border-b border-gray-600">1</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+      <img src="https://img.freepik.com/free-photo/beautiful-landscape-with-small-village_23-2149721819.jpg?t=st=1731592982~exp=1731596582~hmac=0b045f34ba125683ac02d9cb624763555a85195f7a8fb041459bfcd4d9b0c75a&w=826">
+
+            </div>
+        
+            </div>
+            
+            <!-- Conversion Section -->
+            <div class="w-full">
+                <h1 class="text-center text-white bg-green-500 py-2 rounded-t-lg text-xl font-semibold">Convert Area Here</h1>
+                
+                <!-- Input and Select fields container -->
+                <div class="bg-white p-5 shadow-lg rounded-b-lg">
+                    <!-- Area Input -->
+                    <div class="mb-4">
+                        <!-- <label for="areaInput" class="block text-gray-700 text-sm font-semibold mb-2">Enter Area</label> -->
+                        <input type="number" id="areaInput" placeholder="Enter Area" class="w-full p-3 rounded-lg bg-gray-200 border border-gray-300 focus:ring-2 focus:ring-green-500 focus:outline-none transition duration-200 ease-in-out">
+                    </div>
+            
+                    <!-- Input Unit Selector -->
+                    <div class="mb-4">
+                        <!-- <label for="inputUnitSelect" class="block text-gray-700 text-sm font-semibold mb-2">Select Input Unit</label> -->
+                        <select id="inputUnitSelect" class="w-full p-3 rounded-lg bg-gray-200 border border-gray-300 focus:ring-2 focus:ring-green-500 focus:outline-none transition duration-200 ease-in-out">
+                            <option value="" disabled selected>Select input unit</option>
+                            <option value="squareMeters">Square Meters</option>
+                            <option value="squareKilometers">Square Kilometers</option>
+                            <option value="acres">Acres</option>
+                            <option value="hectares">Hectares</option>
+                            <option value="bigha">Bigha</option>
+                            <option value="katha">Katha</option>
+                            <option value="chitak">Chitak</option>
+                            <option value="satak">Satak</option>
+                            <option value="cottah">Cottah</option>
+                            <option value="guntha">Guntha</option>
+                            <option value="decimal">Decimal</option>
+                        </select>
+                    </div>
+            
+                    <!-- Conversion Icon (Up-Down) -->
+                    <div class="flex items-center justify-center py-5">
+                        <i class="fa-sharp fa-solid fa-up-down text-green-500 text-2xl"></i>
+                    </div>
+            
+                    <!-- Output Unit Selector -->
+                    <div class="mb-4">
+                        <!-- <label for="outputUnitSelect" class="block text-gray-700 text-sm font-semibold mb-2">Select Output Unit</label> -->
+                        <select id="outputUnitSelect" class="w-full p-3 rounded-lg bg-gray-200 border border-gray-300 focus:ring-2 focus:ring-green-500 focus:outline-none transition duration-200 ease-in-out">
+                            <option value="squareMeters">Square Meters</option>
+                            <option value="squareKilometers">Square Kilometers</option>
+                            <option value="acres">Acres</option>
+                            <option value="hectares">Hectares</option>
+                            <option value="bigha">Bigha</option>
+                            <option value="katha">Katha</option>
+                            <option value="chitak">Chitak</option>
+                            <option value="satak">Satak</option>
+                            <option value="cottah">Cottah</option>
+                            <option value="guntha">Guntha</option>
+                            <option value="decimal">Decimal</option>
+                        </select>
+                    </div>
+                    <button onclick="convertArea()" class="w-full p-3 bg-green-500 text-white rounded-lg hover:bg-green-600 transition duration-200 ease-in-out">Convert</button>
+            
+                    <!-- Conversion Icon (Equals) -->
+                    <div class="flex items-center justify-center py-3">
+                        <i class="fa-sharp fa-solid fa-equals text-green-500 text-2xl"></i>
+                    </div>
+                    
+            
+                    <!-- Result Display -->
+                    <div class=" text-black py-2 text-center rounded-lg mb-4">
+                        <p class="result text-xl font-semibold"></p>
+                    </div>
+            
+                    <!-- Convert Button -->
+                    
+                </div>
+            </div>
+            
+        </div>
+        <div class="max-w-7xl mx-auto bg-gray-100 p-4 mb-4 rounded-lg shadow-lg">
+            <h2 class="text-lg font-semibold text-green-700">About This Tool</h2>
+            <p class="text-gray-700">
+                This area conversion tool is designed for converting between standard units (like Square Meters, Acres, and Hectares) 
+                and local units commonly used in West Bengal, India. Local units such as <b>Bigha</b>, <b>Katha</b>, <b>Chitak</b>, 
+                <b>Satak</b>, and <b>Decimal</b> have specific meanings in the context of land measurement.
+            </p>
+            <ul class="list-disc ml-5 text-gray-700">
+                <li><b>1 Bigha</b> ≈ 1,338 square meters</li>
+                <li><b>1 Katha</b> ≈ 67 square meters</li>
+                <li><b>1 Chitak</b> ≈ 13.38 square meters</li>
+                <li><b>1 Satak</b> ≈ 40.47 square meters</li>
+                <li><b>1 Decimal</b> ≈ 40.47 square meters</li>
+            </ul>
+            <p class="text-gray-700 mt-2">
+                These measurements are widely used for land transactions and agricultural planning in West Bengal. 
+                This tool provides easy conversions between these units and standard area units.
+            </p>
+        </div>
+        
+    </div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
